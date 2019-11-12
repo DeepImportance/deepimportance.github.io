@@ -1,6 +1,6 @@
  
-title:        DeepFault
-tagline:      Fault Localization For Deep Neural Networks 
+title:        Importance Driven Coverage
+tagline:      Importance-Driven Deep Learning System Testing
 baseurl:      ""
 paginate:     1
 locale:       "en"

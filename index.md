@@ -2,6 +2,66 @@
 layout: default
 ---
 
+
+# Importance Driven Coverage of Deep Learning Systems
+Deep Learning (DL) systems are key enablers for engineering intelligent applications due to their ability to solve complex tasks such as image recognition and machine translation. 
+Nevertheless, using DL systems in safety- and security-critical applications requires to provide testing evidence for their dependable operation. 
+Recent research in this direction focuses on adapting testing criteria from traditional software engineering as a means of increasing confidence for their correct behaviour. 
+However, they are inadequate in capturing the intrinsic properties exhibited by these systems. We bridge this gap by introducing DeepImportance, a systematic testing methodology accompanied by an _Importance-Driven_ (IDC) test adequacy criterion for DL systems. 
+Applying IDC enables to establish a _layer-wise functional understanding_ of the importance of DL system components  and use this information to guide the generation of _semantically-diverse_ test sets. 
+Our empirical evaluation on several DL systems, across multiple DL datasets and with state-of-the-art adversarial generation techniques demonstrates the usefulness and effectiveness of DeepImportance and its ability to guide the engineering of more robust DL systems.
+
+
+### Selected Hyperparameters In Evaluation
+**CW:**
+```
+batch\_size=1,
+confidence=0,
+learning\_rate=5e-3,
+binary\_search\_steps=5,
+max\_iterations=1000,
+abort\_early=True,
+initial\_const=1e-2,
+clip\_min=0,
+clip\_max=1
+```
+
+**FGSM:**
+```
+ eps=0.3,
+ ord=np.inf,
+ y=None,
+ y_target=None,
+ clip_min=None,
+ clip_max=None,
+ clip_grad=False,
+ sanity_checks=True,
+```
+
+**BIM:**
+```
+?
+```
+
+**JSMA:**
+```
+ theta=1.,
+ gamma=1.,
+ clip_min=0.,
+ clip_max=1.,
+ y_target=None,
+ symbolic_impl=True,
+```
+
+**Training Parameters:**
+```
+loss = 'categorical_crossentropy'
+optimizer = 'adadelta'  --> learning_rate=1.0, rho=0.95
+metrics = ['accuracy']
+batch_size = 256,
+epochs = 10
+```
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
