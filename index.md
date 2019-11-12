@@ -15,15 +15,15 @@ Our empirical evaluation on several DL systems, across multiple DL datasets and 
 ### Selected Hyperparameters In Evaluation
 **CW:**
 ```
-batch\_size=1,
-confidence=0,
-learning\_rate=5e-3,
-binary\_search\_steps=5,
-max\_iterations=1000,
-abort\_early=True,
-initial\_const=1e-2,
-clip\_min=0,
-clip\_max=1
+ batch_size=1,
+ confidence=0,
+ learning_rate=5e-3,
+ binary_search_steps=5,
+ max_iterations=1000,
+ abort_early=True,
+ initial_const=1e-2,
+ clip_min=0,
+ clip_max=1
 ```
 
 **FGSM:**
@@ -40,27 +40,56 @@ clip\_max=1
 
 **BIM:**
 ```
-?
+ eps=0.3,
+ eps_iter=0.05,
+ nb_iter=10,
+ y=None,
+ ord=np.inf,
+ clip_min=None,
+ clip_max=None,
+ y_target=None,
+ rand_init=None,
+ rand_init_eps=None,
+ clip_grad=False
 ```
 
 **JSMA:**
 ```
- theta=1.,
- gamma=1.,
- clip_min=0.,
- clip_max=1.,
+ theta=1,
+ gamma=1,
+ clip_min=0,
+ clip_max=1,
  y_target=None,
- symbolic_impl=True,
+ symbolic_impl=True
 ```
 
-**Training Parameters:**
+**Training Parameters for LeNet Models:**
 ```
 loss = 'categorical_crossentropy'
-optimizer = 'adadelta'  --> learning_rate=1.0, rho=0.95
+optimizer = 'adadelta'  --> (learning_rate=1.0, rho=0.95)
 metrics = ['accuracy']
 batch_size = 256,
 epochs = 10
 ```
+
+**Training Parameters for CIFAR Model:**
+```
+loss = 'categorical_crossentropy'
+optimizer = 'RMSprop'  --> (learning_rate=0.0001, decay=1e-6)
+metrics = ['accuracy']
+batch_size = 32,
+epochs = 40
+```
+
+**Training Parameters for DAVE Model:**
+```
+loss = 'mse'
+optimizer = 'adadelta'  --> (learning_rate=1.0, rho=0.95)
+batch_size = 256,
+epochs = 10
+```
+
+
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
