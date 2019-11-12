@@ -1,6 +1,14 @@
-title: Dinky theme
-description: Dinky is a red hot theme for GitHub Pages.
-show_downloads: true
-theme: jekyll-theme-dinky
-url: deepimportance.github.io
-baseurl: ""
+ 
+title:        DeepFault
+tagline:      Fault Localization For Deep Neural Networks 
+baseurl:      ""
+paginate:     1
+locale:       "en"
+
+gems:
+   - jekyll-paginate
+
+#Others
+markdown: kramdown
+
+
