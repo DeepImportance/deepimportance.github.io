@@ -12,6 +12,9 @@ Applying IDC enables to establish a _layer-wise functional understanding_ of the
 Our empirical evaluation on several DL systems, across multiple DL datasets and with state-of-the-art adversarial generation techniques demonstrates the usefulness and effectiveness of DeepImportance and its ability to guide the engineering of more robust DL systems.
 
 
+## Overview
+![robust](./assets/images/robustness.png)
+
 ### Selected Hyperparameters In Evaluation
 **CW:**
 ```
