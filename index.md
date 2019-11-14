@@ -23,7 +23,7 @@ Importance-Driven test adequacy criterion of DeepImportance is satisfied when al
 
 ### Neuron Importance Analysis
 The purpose of importance analysis is to identify neurons within a DL system that are key contributors to decision-making. We capitalise on this unique characteristic of neurons within a trained DL system to establish the importance of each neuron. To achieve this, we compute a decomposition of the decision _f(x)_ made by the system for input _x_ ∈ _X_ and use layer-wise _relevance propagation_ [1] to traverse the network graph and redistribute the
-decision value in a layer-wise manner proportional to the contribution made by each neuron within the layer.
+decision value in a layer-wise manner proportional to the contribution made by each neuron within the layer. When the relevance propagation is iterated until the input layer, it provides relevance score for each individual raw feature (e.g. pixel).
 
 ### Importance Neuron Clustering
 DeepImportance employs _k-means_ to cluster the vector of activation values from the training set for each important neuron and determine sets of values that can be grouped together.
@@ -127,20 +127,20 @@ epochs = 10
 
 ### Research Questions
 Our experimental evaluation answers the research questions below.
-*RQ1 (Importance)*: Can neuron-importance analysis identify the most important neurons?
+**RQ1 (Importance)**: Can neuron-importance analysis identify the most important neurons?
 We used this research question to establish if the importance-based algorithm underpinning DeepImportance for the identification of important neurons comfortably outperforms a strategy that selects such neurons randomly.
 
-*RQ2 (Diversity)*: Can DeepImportance inform the selection of a diverse test set?
+**RQ2 (Diversity)**: Can DeepImportance inform the selection of a diverse test set?
 We investigate whether software engineers an employ the IDC to generate a diverse test set that comprises semantically different test inputs.
 
-*RQ3 (Effectiveness)*: How effective is DeepImportance in identifying misbehaviours in DL systems?
+**RQ3 (Effectiveness)**: How effective is DeepImportance in identifying misbehaviours in DL systems?
 With this research question, we examine the effectiveness of DeepImportance to detect adversarial inputs carefully crafted by state-of-the-art adversar-
 ial generation techniques.
 
-*RQ4 (Correlation)*: How is DeepImportance correlated with existing coverage criteria for DL systems?
+**RQ4 (Correlation)**: How is DeepImportance correlated with existing coverage criteria for DL systems?
 We analyse the relationship in behaviour between DeepImportance and state-of-the-art coverage criteria for DL systems.
 
-*RQ5 (Layer Sensitivity)*: How is the behaviour of DeepImportance affected by the selection of specific neuron layers?
+**RQ5 (Layer Sensitivity)**: How is the behaviour of DeepImportance affected by the selection of specific neuron layers?
 Given the layer-wise capability of DeepImportance, we investigate whether performing the analysis on shallow or deeper layers has any impact on IDC.
 
 ### Robustness
