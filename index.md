@@ -47,6 +47,12 @@ The purpose of clustering is threefold.
 ### Importance-Driven Coverage (IDC)
 Since important neurons are core contributors in decision-making, it is significant to establish that inputs triggering combinations of activation value clusters of those neurons have been covered adequately. The vector of important neurons cluster combinations (INCC) is given by
 
+![incc](./assets/images/incc.png)
+
+where the function **Centroid**(_Ψ_i^n_)measures the “centre of mass”of the i-th cluster for the n-th important neuron. We define Importance-Driven Coverage (IDC) to be the ratio of INCC covered by all y ∈ Y
+over the size of the INCC set. Formally:
+
+![idc](./assets/images/idc.png)
 
 
 Achieving a high IDC score entails a systematically diverse input set that exercises many combinations of important neurons clusters. Consequently, the more confidence we should have in the DL system’s operation. Another important characteristic of IDC is the _layer-wise_ estimation of coverage.
