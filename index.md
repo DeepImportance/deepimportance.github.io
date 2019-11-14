@@ -31,7 +31,7 @@ The red colored words in the text below represent their high relevance to the cl
 
 The red colored pixels in the image below represent their high relevance to the classification decision (i.e. 6) of the DNN that is trained for handwritten image classification.
 
-![heat_6](./assets/images/heatmap6.png)
+![heat_6](./assets/images/heatmap6.png =300x)
 
 ### Importance Neuron Clustering
 DeepImportance employs _k-means_ to cluster the vector of activation values from the training set for each important neuron and determine sets of values that can be grouped together.
