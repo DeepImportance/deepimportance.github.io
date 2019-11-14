@@ -214,7 +214,7 @@ Given the layer-wise capability of DeepImportance, we investigate whether perfor
 **Outcome**: Overall, the chosen target layer affects the result of IDC. Since the penultimate layer is responsible to understand semantically-important high-level features, we argue it is a suitable choice to assess the adequacy of a test set using IDC.
 
 
-#### Robustness
+#### Robustness <span style="color:red">**Not included in the paper.**</span>
 
 **RQ6 (Robustness)** _Can DeepImportance be used to enhance a DNN against inputs whose important features are missing?_
 
