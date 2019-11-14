@@ -26,9 +26,11 @@ The purpose of importance analysis is to identify neurons within a DL system tha
 decision value in a layer-wise manner proportional to the contribution made by each neuron within the layer. When the relevance propagation is iterated until the input layer, it provides relevance score for each individual raw feature (e.g. pixel, characters etc). Below there are two examples of _relevance propagation_ analysis iterated until the input layer.
 
 The red colored words in the text below represent their high relevance to the classification decision (i.e. cars) of the DNN that is trained for text classification.
+
 ![heat_text](./assets/images/heatmap_text.jpg)
 
 The red colored pixels in the image below represent their high relevance to the classification decision (i.e. 6) of the DNN that is trained for handwritten image classification.
+
 ![heat_6](./assets/images/heatmap6.png)
 
 ### Importance Neuron Clustering
@@ -133,6 +135,7 @@ epochs = 10
 
 ### Research Questions
 Our experimental evaluation answers the research questions below.
+
 **RQ1 (Importance)**: Can neuron-importance analysis identify the most important neurons?
 We used this research question to establish if the importance-based algorithm underpinning DeepImportance for the identification of important neurons comfortably outperforms a strategy that selects such neurons randomly.
 
@@ -148,6 +151,18 @@ We analyse the relationship in behaviour between DeepImportance and state-of-the
 
 **RQ5 (Layer Sensitivity)**: How is the behaviour of DeepImportance affected by the selection of specific neuron layers?
 Given the layer-wise capability of DeepImportance, we investigate whether performing the analysis on shallow or deeper layers has any impact on IDC.
+
+###  Importance
+![importance](./assets/images/importance.png)
+
+###  Diversity
+![diversity](./assets/images/validation.png)
+
+###  Effectiveness and Correlation
+![diversity](./assets/images/effectiveness.png)
+
+###  Layer Sensitivity
+![diversity](./assets/images/layer_sens.png)
 
 ### Robustness
 ![robust](./assets/images/robustness.png)
