@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-# Importance Driven Coverage of Deep Learning Systems
+# **Importance Driven Coverage of Deep Learning Systems**
 Deep Learning (DL) systems are key enablers for engineering intelligent applications due to their ability to solve complex tasks such as image recognition and machine translation.
 Nevertheless, using DL systems in safety- and security-critical applications requires to provide testing evidence for their dependable operation.
 Recent research in this direction focuses on adapting testing criteria from traditional software engineering as a means of increasing confidence for their correct behaviour.
@@ -31,7 +31,8 @@ The red colored words in the text below represent their high relevance to the cl
 
 The red colored pixels in the image below represent their high relevance to the classification decision (i.e. 6) of the DNN that is trained for handwritten image classification.
 
-![heat_6](./assets/images/heatmap6.png =300x)
+![heat_6](./assets/images/heatmap6.png)
+<img src="./assets/images/heatmap6.png" alt="drawing" style="width:200px;"/>
 
 ### Importance Neuron Clustering
 DeepImportance employs _k-means_ to cluster the vector of activation values from the training set for each important neuron and determine sets of values that can be grouped together.
