@@ -174,7 +174,7 @@ We used this research question to establish if the importance-based algorithm un
 We investigate whether software engineers an employ the IDC to generate a diverse test set that comprises semantically different test inputs.
 
 <!-- ![diversity](./assets/images/validation.png) -->
-<img src="./assets/images/diversity.png" alt="drawing" style="width:800px;"/>
+<img src="./assets/images/validation.png" alt="diversity" style="width:800px;"/>
 
 **Outcome**: We conclude that DeepImportance with its IDC coverage criterion can support software engineers to create a diverse test set that comprises semantically different test inputs.
 
@@ -189,7 +189,7 @@ With this research question, we examine the effectiveness of DeepImportance to d
 We analyse the relationship in behaviour between DeepImportance and state-of-the-art coverage criteria for DL systems.
 
 <!-- ![diversity](./assets/images/effectiveness.png) -->
-<img src="./assets/images/effectiveness.png" alt="drawing" style="width:500px;"/>
+<img src="./assets/images/effectiveness.png" alt="effectiveness" style="width:500px;"/>
 
 
 **Outcome** (Effectiveness): We conclude that IDC is sensitive to adversarial inputs and is effective in detecting misbehaviours in test sets with inputs semantically different than those encountered before.
