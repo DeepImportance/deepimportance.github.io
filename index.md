@@ -54,7 +54,7 @@ over the size of the INCC set. Formally:
 
 ![idc](./assets/images/idc.png)
 
-<span style="color:red">Proof can be found here: https://github.com/DeepImportance/deepimportance.github.io/blob/master/assets/pdf/DeepImportanceProof.pdf</span>
+<span style="color:red">**IDC soundness proof can be found here:**</span> <a href="https://github.com/DeepImportance/deepimportance.github.io/blob/master/assets/pdf/DeepImportanceProof.pdf"></a> 
 
 Achieving a high IDC score entails a systematically diverse input set that exercises many combinations of important neurons clusters. Consequently, the more confidence we should have in the DL system’s operation. Another important characteristic of IDC is the _layer-wise_ estimation of coverage.
 
