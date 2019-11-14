@@ -31,8 +31,8 @@ The red colored words in the text below represent their high relevance to the cl
 
 The red colored pixels in the image below represent their high relevance to the classification decision (i.e. 6) of the DNN that is trained for handwritten image classification.
 
-![heat_6](./assets/images/heatmap6.png)
-<img src="./assets/images/heatmap6.png" alt="drawing" style="width:200px;"/>
+<!-- ![heat_6](./assets/images/heatmap6.png) -->
+<img src="./assets/images/heatmap6.png" alt="drawing" style="width:250px;"/>
 
 ### Importance Neuron Clustering
 DeepImportance employs _k-means_ to cluster the vector of activation values from the training set for each important neuron and determine sets of values that can be grouped together.
@@ -173,7 +173,8 @@ We used this research question to establish if the importance-based algorithm un
 
 We investigate whether software engineers an employ the IDC to generate a diverse test set that comprises semantically different test inputs.
 
-![diversity](./assets/images/validation.png)
+<!-- ![diversity](./assets/images/validation.png) -->
+<img src="./assets/images/diversity.png" alt="drawing" style="width:800px;"/>
 
 **Outcome**: We conclude that DeepImportance with its IDC coverage criterion can support software engineers to create a diverse test set that comprises semantically different test inputs.
 
@@ -187,7 +188,9 @@ With this research question, we examine the effectiveness of DeepImportance to d
 
 We analyse the relationship in behaviour between DeepImportance and state-of-the-art coverage criteria for DL systems.
 
-![diversity](./assets/images/effectiveness.png)
+<!-- ![diversity](./assets/images/effectiveness.png) -->
+<img src="./assets/images/effectiveness.png" alt="drawing" style="width:500px;"/>
+
 
 **Outcome** (Effectiveness): We conclude that IDC is sensitive to adversarial inputs and is effective in detecting misbehaviours in test sets with inputs semantically different than those encountered before.
 
