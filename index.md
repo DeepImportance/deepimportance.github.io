@@ -135,11 +135,29 @@ epochs = 10
 
 ### Experimental Setup
 
+#### Datasets and DL Systems
+Table below shows the datasets and DL systems used in our experimental evaluation.
+
+| Dataset        | DL System          | #Params | Performance |
+|:---------------|:------_------------|:--------|:------------|
+| MNIST          |  LeNet-1           | 7206    | 98.33%      |
+| MNIST          |  LeNet-4           | 69262   | 98.59%      |
+| MNIST          |  LeNet-5           | 107786  | 98.96%      |
+| CIFAR-10       | A 20 layer ConvNet | 952234  | 77.68%      |
+| Self-driving data | Dave-2          | 2116983 | 0.096 (MSE) |
+
+#### Coverage Criteria Configurations
+We facilitate a thorough and unbiased evaluation of DeepImportance by comparing it against state-of-the-art coverage criteria for DL systems. To this end, we used DeepXplore’s neuron coverage (NC); DeepGauge’s k-multisection neuron coverage (KMNC), neuron boundary coverage (NBC), strong neuron activation coverage (SNAC) and top-k neuron coverage (TKNC); and Surprise’s Adequacy distance-based (DSC) and likelihood-based surprise coverage (LSC). For each criterion, we use the hyper-parameters recommended in its original research.
+
+#### Synthetic Inputs and Adversarial Examples
+We use both syn thetic inputs and adversarial examples to evaluate DeepImpor-
+tance. Synthetic inputs are obtained by applying small perturbations on the original inputs through Gaussian-like injected white noise. We employ four widely studied adversarial attack strategies to evaluate DeepImportance  Fast Gradient Sign Method (FGSM), Basic Iterative Method (BIM), Jacobian-based Saliency Map Attack (JSMA) , and Carlini&Wagner (C&W). Our implementation
+of these strategies is based on Cleverhans library.
 
 ### Research Questions
 Our experimental evaluation answers the research questions below.
 
-###  Importance
+####  Importance
 **RQ1 (Importance)**: _Can neuron-importance analysis identify the most important neurons?_
 
 We used this research question to establish if the importance-based algorithm underpinning DeepImportance for the identification of important neurons comfortably outperforms a strategy that selects such neurons randomly.
@@ -149,7 +167,7 @@ We used this research question to establish if the importance-based algorithm un
 **Outcome**: We conclude that DeepImportance can detect the most important neurons of a DL system and those neurons are more sensitive to changes in relevant pixels of a given input.
 
 
-###  Diversity
+####  Diversity
 **RQ2 (Diversity)**: _Can DeepImportance inform the selection of a diverse test set?_
 
 We investigate whether software engineers an employ the IDC to generate a diverse test set that comprises semantically different test inputs.
@@ -159,7 +177,7 @@ We investigate whether software engineers an employ the IDC to generate a divers
 **Outcome**: We conclude that DeepImportance with its IDC coverage criterion can support software engineers to create a diverse test set that comprises semantically different test inputs.
 
 
-###  Effectiveness and Correlation
+####  Effectiveness and Correlation
 **RQ3 (Effectiveness)**: _How effective is DeepImportance in identifying misbehaviours in DL systems?_
 
 With this research question, we examine the effectiveness of DeepImportance to detect adversarial inputs carefully crafted by state-of-the-art adversarial generation techniques.
@@ -175,7 +193,7 @@ We analyse the relationship in behaviour between DeepImportance and state-of-the
 **Outcome** (Correlation): In general, we conclude that IDC shows a similar behaviour to state-of-the-art coverage criteria for DL systems; hence, there is a positive correlation between them
 
 
-###  Layer Sensitivity
+####  Layer Sensitivity
 **RQ5 (Layer Sensitivity)**: _How is the behaviour of DeepImportance affected by the selection of specific neuron layers?_
 
 Given the layer-wise capability of DeepImportance, we investigate whether performing the analysis on shallow or deeper layers has any impact on IDC.
@@ -185,7 +203,7 @@ Given the layer-wise capability of DeepImportance, we investigate whether perfor
 **Outcome**: Overall, the chosen target layer affects the result of IDC. Since the penultimate layer is responsible to understand semantically-important high-level features, we argue it is a suitable choice to assess the adequacy of a test set using IDC.
 
 
-### Robustness
+#### Robustness
 
 **RQ6 (Robustness)** _Can DeepImportance be used to enhance a DNN against inputs whose important features are missing?_
 
