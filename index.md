@@ -125,5 +125,23 @@ epochs = 10
 
 ## Evaluation
 
+### Research Questions
+Our experimental evaluation answers the research questions below.
+*RQ1 (Importance)*: Can neuron-importance analysis identify the most important neurons?
+We used this research question to establish if the importance-based algorithm underpinning DeepImportance for the identification of important neurons comfortably outperforms a strategy that selects such neurons randomly.
+
+*RQ2 (Diversity)*: Can DeepImportance inform the selection of a diverse test set?
+We investigate whether software engineers an employ the IDC to generate a diverse test set that comprises semantically different test inputs.
+
+*RQ3 (Effectiveness)*: How effective is DeepImportance in identifying misbehaviours in DL systems?
+With this research question, we examine the effectiveness of DeepImportance to detect adversarial inputs carefully crafted by state-of-the-art adversar-
+ial generation techniques.
+
+*RQ4 (Correlation)*: How is DeepImportance correlated with existing coverage criteria for DL systems?
+We analyse the relationship in behaviour between DeepImportance and state-of-the-art coverage criteria for DL systems.
+
+*RQ5 (Layer Sensitivity)*: How is the behaviour of DeepImportance affected by the selection of specific neuron layers?
+Given the layer-wise capability of DeepImportance, we investigate whether performing the analysis on shallow or deeper layers has any impact on IDC.
+
 ### Robustness
 ![robust](./assets/images/robustness.png)
