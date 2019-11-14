@@ -133,45 +133,64 @@ epochs = 10
 
 ## Evaluation
 
+### Experimental Setup
+
+
 ### Research Questions
 Our experimental evaluation answers the research questions below.
 
+###  Importance
 **RQ1 (Importance)**: _Can neuron-importance analysis identify the most important neurons?_
 
 We used this research question to establish if the importance-based algorithm underpinning DeepImportance for the identification of important neurons comfortably outperforms a strategy that selects such neurons randomly.
 
+![importance](./assets/images/importance.png)
+
+**Outcome**: We conclude that DeepImportance can detect the most important neurons of a DL system and those neurons are more sensitive to changes in relevant pixels of a given input.
+
+
+###  Diversity
 **RQ2 (Diversity)**: _Can DeepImportance inform the selection of a diverse test set?_
 
 We investigate whether software engineers an employ the IDC to generate a diverse test set that comprises semantically different test inputs.
 
+![diversity](./assets/images/validation.png)
+
+**Outcome**: We conclude that DeepImportance with its IDC coverage criterion can support software engineers to create a diverse test set that comprises semantically different test inputs.
+
+
+###  Effectiveness and Correlation
 **RQ3 (Effectiveness)**: _How effective is DeepImportance in identifying misbehaviours in DL systems?_
 
-With this research question, we examine the effectiveness of DeepImportance to detect adversarial inputs carefully crafted by state-of-the-art adversar-
-ial generation techniques.
+With this research question, we examine the effectiveness of DeepImportance to detect adversarial inputs carefully crafted by state-of-the-art adversarial generation techniques.
 
 **RQ4 (Correlation)**: _How is DeepImportance correlated with existing coverage criteria for DL systems?_
 
 We analyse the relationship in behaviour between DeepImportance and state-of-the-art coverage criteria for DL systems.
 
+![diversity](./assets/images/effectiveness.png)
+
+**Outcome** (Effectiveness): We conclude that IDC is sensitive to adversarial inputs and is effective in detecting misbehaviours in test sets with inputs semantically different than those encountered before.
+
+**Outcome** (Correlation): In general, we conclude that IDC shows a similar behaviour to state-of-the-art coverage criteria for DL systems; hence, there is a positive correlation between them
+
+
+###  Layer Sensitivity
 **RQ5 (Layer Sensitivity)**: _How is the behaviour of DeepImportance affected by the selection of specific neuron layers?_
 
 Given the layer-wise capability of DeepImportance, we investigate whether performing the analysis on shallow or deeper layers has any impact on IDC.
+
+![diversity](./assets/images/layer_sens.png)
+
+**Outcome**: Overall, the chosen target layer affects the result of IDC. Since the penultimate layer is responsible to understand semantically-important high-level features, we argue it is a suitable choice to assess the adequacy of a test set using IDC.
+
+
+### Robustness
 
 **RQ6 (Robustness)** _Can DeepImportance be used to enhance a DNN against inputs whose important features are missing?_
 
 IDC requires semantically diverse inputs to be satisfied. We examine if a DNN can be enhanced by augmenting its training set with the inputs that are increasing IDC.
 
-###  Importance
-![importance](./assets/images/importance.png)
-
-###  Diversity
-![diversity](./assets/images/validation.png)
-
-###  Effectiveness and Correlation
-![diversity](./assets/images/effectiveness.png)
-
-###  Layer Sensitivity
-![diversity](./assets/images/layer_sens.png)
-
-### Robustness
 ![robust](./assets/images/robustness.png)
+
+**Outcome**:
