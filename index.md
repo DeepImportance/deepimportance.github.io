@@ -139,7 +139,7 @@ epochs = 10
 Table below shows the datasets and DL systems used in our experimental evaluation.
 
 | Dataset        | DL System          | #Params | Performance |
-|:---------------|:------_------------|:--------|:------------|
+|:---------------|:-------------------|:--------|:------------|
 | MNIST          |  LeNet-1           | 7206    | 98.33%      |
 | MNIST          |  LeNet-4           | 69262   | 98.59%      |
 | MNIST          |  LeNet-5           | 107786  | 98.96%      |
