@@ -25,7 +25,10 @@ Importance-Driven test adequacy criterion of DeepImportance is satisfied when al
 The purpose of importance analysis is to identify neurons within a DL system that are key contributors to decision-making. We capitalise on this unique characteristic of neurons within a trained DL system to establish the importance of each neuron. To achieve this, we compute a decomposition of the decision _f(x)_ made by the system for input _x_ ∈ _X_ and use layer-wise _relevance propagation_ [1] to traverse the network graph and redistribute the
 decision value in a layer-wise manner proportional to the contribution made by each neuron within the layer. When the relevance propagation is iterated until the input layer, it provides relevance score for each individual raw feature (e.g. pixel, characters etc). Below there are two examples of _relevance propagation_ analysis iterated until the input layer.
 
+The red colored words in the text below represent their high relevance to the classification decision (i.e. cars) of the DNN that is trained for text classification.
 ![heat_text](./assets/images/heatmap_text.jpg)
+
+The red colored pixels in the image below represent their high relevance to the classification decision (i.e. 6) of the DNN that is trained for handwritten image classification.
 ![heat_6](./assets/images/heatmap6.png)
 
 ### Importance Neuron Clustering
