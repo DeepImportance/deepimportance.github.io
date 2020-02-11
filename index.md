@@ -6,8 +6,11 @@ layout: default
 # **Importance Driven Coverage of Deep Learning Systems**
 ### Author Information
 [Simos Gerasimou](https://www-users.cs.york.ac.uk/simos/)    - University of York
+
 [Hasan Ferit Eniser](hasanferit.github.io) - MPI-SWS
+
 [Alper Sen](https://www.cmpe.boun.edu.tr/~sen/)          - Bogazici University
+
 Alper Cakan        - Bogazici University
 
 ### Source Code
