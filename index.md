@@ -4,6 +4,16 @@ layout: default
 
 
 # **Importance Driven Coverage of Deep Learning Systems**
+### Author Information
+[Simos Gerasimou](https://www-users.cs.york.ac.uk/simos/)    - University of York
+[Hasan Ferit Eniser](hasanferit.github.io) - MPI-SWS
+[Alper Sen](https://www.cmpe.boun.edu.tr/~sen/)          - Bogazici University
+Alper Cakan        - Bogazici University
+
+### Source Code
+https://github.com/DeepImportance/deepimportance_code_release
+
+### Abstract
 Deep Learning (DL) systems are key enablers for engineering intelligent applications due to their ability to solve complex tasks such as image recognition and machine translation.
 Nevertheless, using DL systems in safety- and security-critical applications requires to provide testing evidence for their dependable operation.
 Recent research in this direction focuses on adapting testing criteria from traditional software engineering as a means of increasing confidence for their correct behaviour.
